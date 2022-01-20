@@ -1,1 +1,11 @@
+body{
+    background: url(../img/sinkai.jpeg) no-repeat ;
+    background-size: cover;
+}
+.works section{
+    background:url(../img/sinkai.jpeg) no-repeat
+}
+body main div{
+    color:rgba(255, 255, 255, 0.26);
+}
 
