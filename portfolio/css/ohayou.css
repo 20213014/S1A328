@@ -1,11 +1,24 @@
-body{
-    background: url(../img/sinkai.jpeg) no-repeat ;
-    background-size: cover;
-}
-.works section{
-    background:url(../img/sinkai.jpeg) no-repeat
-}
-body main div{
-    color:rgba(255, 255, 255, 0.26);
+*{
+    font-family: 'DotGothic16', sans-serif;
 }
 
+.main-visual-title{
+    color: rgb(235, 175, 64);
+}
+
+.skill-item{
+    border-bottom: 0.1875em solid #8d6721;
+	display: flex;
+	padding: 0.6em 2em;
+	margin: 0 0 1em;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+.skill-item:hover {
+	border-bottom-color: transparent;
+	transform: translateY(0.1875em);
+}
+
+.main-visual-img{
+    width: 106px;
+}
