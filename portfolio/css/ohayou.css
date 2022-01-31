@@ -3,8 +3,10 @@
 }
 
 .main-visual-title{
+    text-align: center;
     color: rgb(235, 175, 64);
 }
+
 
 .skill-item{
     border-bottom: 0.1875em solid #8d6721;
@@ -12,7 +14,7 @@
 	padding: 0.6em 2em;
 	margin: 0 0 1em;
 	cursor: pointer;
-	transition: all 0.3s ease 0s;
+	transition: all 0s ease 0s;
 }
 .skill-item:hover {
 	border-bottom-color: transparent;
@@ -22,3 +24,66 @@
 .main-visual-img{
     width: 106px;
 }
+
+/* アニメーション */
+@keyframes onBorder {
+    from {
+        border: 0px solid #fff;
+    }
+    to {
+        border: 15px solid #fff;
+    }
+}
+
+.main-visual-img {
+    animation-name: onBorder;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    }
+
+.slide {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.slide img {
+width: 200px;
+height: inherit;
+margin: 0;
+padding: 0;
+border: none;
+}
+
+@keyframes slide-4 {
+0% {
+    margin-left: 0;
+}
+
+33% {
+    margin-left: -100%;
+}
+
+66% {
+    margin-left: -200%;
+}
+
+100% {
+    margin-left: -300%;
+}
+}
+
+.slide>:first-child {
+animation-name: slide-4;
+animation-duration: 10s;
+animation-timing-function: linear;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+}
+
+.main-visual-img:hover {
+	animation-play-state: paused;
+}
+
+
+
